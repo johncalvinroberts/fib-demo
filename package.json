@@ -5,7 +5,6 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/index.html",
-    "postbuild": "react-snap",
     "start": "parcel serve src/index.html",
     "build-wasm": "bash build-wasm.sh"
   },
@@ -27,7 +26,7 @@
     "inlineCss": true
   },
   "staticFiles": {
-    "staticPath": "src/modules/artifacts",
+    "staticPath": "src/artifacts",
     "watcherGlob": "**"
   }
 }
