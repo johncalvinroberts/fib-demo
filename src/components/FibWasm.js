@@ -13,7 +13,7 @@ export default function WasmFib() {
     };
   }, []);
 
-  const fib = isReady && instanceRef.current.cwrap('fib', 'number', ['number']);
+  const fib = isReady && instanceRef.current._fib;
 
   return (
     <div>
